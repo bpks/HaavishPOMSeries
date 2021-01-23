@@ -34,6 +34,7 @@ public class LoginPageTest extends BaseTest {
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void verifyLoginPageTitle() {
+		System.out.println("running login page title test");
 
 		String title = loginPage.getPageTitle(driver);
 

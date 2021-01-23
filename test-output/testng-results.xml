@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="CRM Test automtion regression suite" duration-ms="62326" started-at="2021-01-20T19:20:06 GMT" finished-at="2021-01-20T19:21:09 GMT">
+  <suite name="CRM Test automtion regression suite" duration-ms="44707" started-at="2021-01-21T14:40:42 GMT" finished-at="2021-01-21T14:41:27 GMT">
     <groups>
     </groups>
-    <test name="HubSpot Feature Testing - Contacts Page - chrome" duration-ms="62326" started-at="2021-01-20T19:20:06 GMT" finished-at="2021-01-20T19:21:09 GMT">
+    <test name="HubSpot Feature Testing - Contacts Page - chrome" duration-ms="44707" started-at="2021-01-21T14:40:42 GMT" finished-at="2021-01-21T14:41:27 GMT">
       <class name="com.qa.crmpro.tests.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="setUp" is-config="true" duration-ms="9418" started-at="2021-01-20T19:20:06 GMT" finished-at="2021-01-20T19:20:16 GMT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="setUp" is-config="true" duration-ms="8715" started-at="2021-01-21T14:40:42 GMT" finished-at="2021-01-21T14:40:51 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="createNewContactTest" duration-ms="7943" started-at="2021-01-20T19:20:17 GMT" data-provider="getContactsTestData" finished-at="2021-01-20T19:20:24 GMT">
+        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="createNewContactTest" duration-ms="7755" started-at="2021-01-21T14:40:52 GMT" data-provider="getContactsTestData" finished-at="2021-01-21T14:40:59 GMT">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="createNewContactTest" duration-ms="8824" started-at="2021-01-20T19:20:25 GMT" data-provider="getContactsTestData" finished-at="2021-01-20T19:20:34 GMT">
+        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="createNewContactTest" duration-ms="5077" started-at="2021-01-21T14:41:00 GMT" data-provider="getContactsTestData" finished-at="2021-01-21T14:41:05 GMT">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="createNewContactTest" duration-ms="13902" started-at="2021-01-20T19:20:34 GMT" data-provider="getContactsTestData" finished-at="2021-01-20T19:20:47 GMT">
+        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="createNewContactTest" duration-ms="7942" started-at="2021-01-21T14:41:05 GMT" data-provider="getContactsTestData" finished-at="2021-01-21T14:41:13 GMT">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="createNewContactTest" duration-ms="10925" started-at="2021-01-20T19:20:47 GMT" data-provider="getContactsTestData" finished-at="2021-01-20T19:20:58 GMT">
+        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="createNewContactTest" duration-ms="7473" started-at="2021-01-21T14:41:13 GMT" data-provider="getContactsTestData" finished-at="2021-01-21T14:41:20 GMT">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method status="FAIL" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="createNewContactTest" duration-ms="8104" started-at="2021-01-20T19:20:58 GMT" data-provider="getContactsTestData" finished-at="2021-01-20T19:21:06 GMT">
+        <test-method status="FAIL" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="createNewContactTest" duration-ms="5211" started-at="2021-01-21T14:41:20 GMT" data-provider="getContactsTestData" finished-at="2021-01-21T14:41:25 GMT">
           <params>
             <param index="0">
               <value>
@@ -143,27 +143,27 @@
               <![CDATA[unexpected alert open: {Alert text : Please enter a first name
 Please enter a surname
 }
-  (Session info: chrome=87.0.4280.141): Please enter a first name
+  (Session info: chrome=88.0.4324.96): Please enter a first name
 Please enter a surname
 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro', ip: '2a02:c7f:52a8:4200:88fa:a6f:c395:5467%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gml2dmhx561...}, goog:chromeOptions: {debuggerAddress: localhost:58567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e4f3b6e82013eda4de128cf688de5f08]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gml2dmhx561...}, goog:chromeOptions: {debuggerAddress: localhost:61587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dfd69670bb951edcc8eeec450898162]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter a first name
 Please enter a surname
 }
-  (Session info: chrome=87.0.4280.141): Please enter a first name
+  (Session info: chrome=88.0.4324.96): Please enter a first name
 Please enter a surname
 
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro', ip: '2a02:c7f:52a8:4200:88fa:a6f:c395:5467%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gml2dmhx561...}, goog:chromeOptions: {debuggerAddress: localhost:58567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e4f3b6e82013eda4de128cf688de5f08
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/rl/gml2dmhx561...}, goog:chromeOptions: {debuggerAddress: localhost:61587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dfd69670bb951edcc8eeec450898162
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
@@ -201,7 +201,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@375b5b7f]" name="tearDown" is-config="true" duration-ms="124" started-at="2021-01-20T19:21:09 GMT" finished-at="2021-01-20T19:21:09 GMT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crmpro.tests.ContactsPageTest@6a933be2]" name="tearDown" is-config="true" duration-ms="119" started-at="2021-01-21T14:41:27 GMT" finished-at="2021-01-21T14:41:27 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

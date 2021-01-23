@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Build On DEV') {
           steps {
-            bat 'mvn clean install -DskipTests=true'
+            sh 'mvn clean install -DskipTests=true'
           }
         }
 
         stage('Run On DEV') {
           steps {
-            bat 'mvn test -Denv=dev'
+            sh 'mvn test -Denv=dev'
           }
         }
 
@@ -22,13 +22,13 @@ pipeline {
       parallel {
         stage('Build On QA') {
           steps {
-            bat 'mvn clean install -DskipTests=true'
+            sh 'mvn clean install -DskipTests=true'
           }
         }
 
         stage('Run On QA') {
           steps {
-            bat 'mvn test -Denv=qa'
+            sh 'mvn test -Denv=qa'
           }
         }
 
@@ -39,13 +39,13 @@ pipeline {
       parallel {
         stage('Build On Stage') {
           steps {
-            bat 'mvn clean install -DskipTests=true'
+            sh 'mvn clean install -DskipTests=true'
           }
         }
 
         stage('Run On Stage') {
           steps {
-            bat 'mvn test -Denv=stage'
+            sh 'mvn test -Denv=stage'
           }
         }
 

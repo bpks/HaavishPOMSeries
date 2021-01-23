@@ -1,97 +1,71 @@
 pipeline {
   agent any
   stages {
-    stage('Build on Dev') {
+    stage('Build On DEV') {
       parallel {
-        stage('Build on Dev') {
+        stage('Build On DEV') {
           steps {
-            sh 'mvn clean install -DskipTests=true'
+            bat 'mvn clean install -DskipTests=true'
           }
         }
 
-        stage('Run On Dev') {
+        stage('Run On DEV') {
           steps {
-            sh 'mvn test -Denv=dev
+            bat 'mvn test -Denv=dev'
           }
         }
 
       }
     }
 
-    stage('Run on QA') {
+    stage('Build On QA') {
       parallel {
-        stage('Build on QA  ') {
+        stage('Build On QA') {
           steps {
-            sh 'mvn clean install -DskipTests=true'
+            bat 'mvn clean install -DskipTests=true'
           }
         }
 
-        stage('Run Test on QA and Chrome') {
+        stage('Run On QA') {
           steps {
-            sh 'mvn test -Denv=qa -Dbrowser=chrome'
-          }
-        }
-
-        stage('Run Test on QA and safari') {
-          steps {
-            sh 'mvn test -Denv=qa -Dbrowser=safari'
+            bat 'mvn test -Denv=qa'
           }
         }
 
       }
     }
 
-    stage('Build on Stage') {
+    stage('Build On Stage') {
       parallel {
-        stage('Build on Stage') {
+        stage('Build On Stage') {
           steps {
-            sh 'mvn clean install -DskipTests=true'
+            bat 'mvn clean install -DskipTests=true'
           }
         }
 
-       stage('Run Test on stage and chrome') {
+        stage('Run On Stage') {
           steps {
-            sh 'mvn test -Denv=stage -Dbrowser=chrome'
+            bat 'mvn test -Denv=stage'
           }
         }
 
       }
     }
 
-    stage('Run on Prod') {
-      parallel {
-         stage('Run on Prod') {
-          steps {
-        sh 'mvn clean install -DskipTests=true'
-      }
-    }
-
-   stage('Run Test on Prod and safari') {
-          steps {
-            sh 'mvn test -Denv=prod -Dbrowser=safari'
-          }
-    }
-        stage('Chrome') {
+    stage('Publish Reports') {
       steps {
-        sh 'mvn test -Denv=prod -Dbrowser=chrome'
+        script {
+          allure([
+            includeProperties: false,
+            jdk: '',
+            Properties: [],
+            reportBuildPolicy: 'ALWAYS',
+            results: [[path: '/allure-results']]
+          ])
+        }
+
       }
     }
 
-  }
-}
-  }
-  
-  stage('publish Reports'){
-  steps{
-  script{
-  allure([
-  includeProperties:false,
-  jdk:'',
-  properties:[],
-  reportBuildPolicy:'ALAWAYS',
-  results:[[path:'/allure-results']]
-  ])
-  }
-  }
   }
 }
